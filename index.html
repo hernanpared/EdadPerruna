@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad de Perros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Edad de Tu Mejor Amigo</div>
+        <img id="dogImage" src="/img_/vander-films-apvb8kmih5w-unsplash-scaled.webp" alt="Dog Image" class="dog-image">
+        <div class="input-container">
+            <label for="humanAge">Introduce la edad de tu perro en años humanos:</label>
+            <input type="number" id="humanAge" placeholder="Edad en años humanos">
+        </div>
+        <div class="input-container">
+            <label for="dogSize">Selecciona el tamaño de tu perro:</label>
+            <select id="dogSize">
+                <option value="small">Pequeño (9Kg o menos)</option>
+                <option value="medium">Mediano (10kg a 22Kg)</option>
+                <option value="large">Grande (22ks a 45kg)</option>
+                <option value="giant">Gigante (45+ lbs)</option>
+            </select>
+        </div>
+        <button id="calculateButton">Calcular</button>
+        <div class="result" id="result"></div>
+    </div>
+    <footer>
+        <p>Con mucho amor a los seres más leales del mundo, Hernan Pared</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
